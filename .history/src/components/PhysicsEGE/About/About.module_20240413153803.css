@@ -1,0 +1,24 @@
+
+
+
+.firstSlide {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(20, 20, 20);
+    color: white;
+}
+
+.Navigation {
+    color: black;
+}
+
+.NavigationUL {
+    padding: 5%;
+    background-color: white;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 150%;
+}

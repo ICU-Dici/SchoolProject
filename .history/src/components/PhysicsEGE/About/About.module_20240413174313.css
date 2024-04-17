@@ -1,0 +1,187 @@
+.AheadWrapper {
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+.BackgroundImage {
+    background: url('https://upload.wikimedia.org/wikipedia/commons/7/75/Opening_Ceremony_IAU2006GA.jpg');
+    filter: brightness(40%);
+    background-repeat: no-repeat;
+    background-size: 100vw;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+}
+
+.firstSlide {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(20, 20, 20);
+    color: white;
+}
+
+.MainText {
+margin-top: 25%;
+margin-left: 3%;
+font-size: 150%;
+filter: brightness(100%);
+}
+
+.Title {
+    font-size: 250%;
+    border-bottom: 2px solid white;
+    margin-bottom: 3%;
+    width: fit-content;
+}
+
+.Navigation {
+    color: black;
+    filter: brightness(100%);
+}
+
+.NavigationUL {
+    margin-top: -5%;
+    padding: 5%;
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+
+    border: 2px solid black;
+    padding-top: 40%;
+    padding-left: 22.5%;
+    background-color: rgba(0, 0, 0, 0.637);
+}
+
+.Name1 {
+    margin-bottom: 1%;
+    list-style-type: none;
+    cursor: pointer;
+    font-size: 1.8vw;
+    color: rgb(255, 255, 255);
+    text-decoration: underline 2px rgba(0, 0, 0, 0);
+    width: fit-content;
+}
+.shortInfo1 {
+    color: white;
+    width: 60%;
+    line-height: 1.5;
+    transform: translateY(-200%);
+    opacity: 1;
+    transition: 0.3s all;
+    pointer-events: none;
+    opacity: 0;
+    margin-bottom: -12%;
+}
+
+.Name1:hover ~ .shortInfo1{
+    transform: translateY(0);
+    opacity: 1;
+    margin-bottom: 0;
+}
+
+.Name2 {
+    margin-bottom: 1%;
+    list-style-type: none;
+    cursor: pointer;
+    font-size: 1.8vw;
+    color: rgb(255, 255, 255);
+    text-decoration: underline 2px rgba(0, 0, 0, 0);
+    width: fit-content;
+}
+.shortInfo2 {
+    color: white;
+    width: 60%;
+    line-height: 1.5;
+    transform: translateY(-200%);
+    opacity: 1;
+    transition: 0.3s all;
+    pointer-events: none;
+    opacity: 0;
+    margin-bottom: -12%;
+}
+
+.Name2:hover ~ .shortInfo2{
+    transform: translateY(0);
+    opacity: 1;
+    margin-bottom: 0;
+}
+.Name3 {
+    margin-bottom: 1%;
+    list-style-type: none;
+    cursor: pointer;
+    font-size: 1.8vw;
+    color: rgb(255, 255, 255);
+    text-decoration: underline 2px rgba(0, 0, 0, 0);
+    width: fit-content;
+}
+.shortInfo3 {
+    color: white;
+    width: 60%;
+    line-height: 1.5;
+    transform: translateY(-200%);
+    opacity: 1;
+    transition: 0.3s all;
+    pointer-events: none;
+    opacity: 0;
+    margin-bottom: -12%;
+}
+
+.Name3:hover ~ .shortInfo3{
+    transform: translateY(0);
+    opacity: 1;
+    margin-bottom: 0;
+}
+.Name4 {
+    margin-bottom: 1%;
+    list-style-type: none;
+    cursor: pointer;
+    font-size: 1.8vw;
+    color: rgb(255, 255, 255);
+    text-decoration: underline 2px rgba(0, 0, 0, 0);
+    width: fit-content;
+}
+.shortInfo4 {
+    color: white;
+    width: 60%;
+    line-height: 1.5;
+    transform: translateY(-200%);
+    opacity: 1;
+    transition: 0.3s all;
+    pointer-events: none;
+    opacity: 0;
+    margin-bottom: -3%;
+}
+
+.Name4:hover ~ .shortInfo4{
+    transform: translateY(0);
+    opacity: 1;
+    margin-bottom: 0;
+}
+.Name5 {
+    margin-bottom: 1%;
+    list-style-type: none;
+    cursor: pointer;
+    font-size: 1.8vw;
+    color: rgb(255, 255, 255);
+    text-decoration: underline 2px rgba(0, 0, 0, 0);
+    width: fit-content;
+}
+.shortInfo5 {
+    color: white;
+    width: 60%;
+    line-height: 1.5;
+    transform: translateY(-200%);
+    opacity: 1;
+    transition: 0.3s all;
+    pointer-events: none;
+    opacity: 0;
+    margin-bottom: -12%;
+}
+
+.Name5:hover ~ .shortInfo5{
+    transform: translateY(0);
+    opacity: 1;
+    margin-bottom: 0;
+}

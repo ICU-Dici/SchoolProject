@@ -1,0 +1,108 @@
+.burgerParentEl {
+    margin-bottom: 2%;
+    font-size: 300%;
+    cursor: pointer;
+    width: fit-content;
+    transition: 0.5s ease-out 0.3s;
+}
+
+.burgerParentElHidden{
+    margin-bottom: 0;
+    font-size: 300%;
+    cursor: pointer;
+    width: fit-content;
+    color: rgb(20, 20, 20);
+    transition: 1s all;
+}
+
+.burgerParentEl::after {
+    display: block;
+    height: 2px;
+    position: relative;
+    width: 0;
+    content: '';
+    background-color: #ffffff;
+    transition: width 0.2s ease-out;
+}
+
+.burgerParentEl:hover::after {
+    width: 100%;
+}
+
+
+.burgerParentElSelected {
+    margin-bottom: 2%;
+    font-size: 300%;
+    cursor: pointer;
+    width: fit-content;
+}
+
+
+.burgerParentElSelected::after {
+    display: block;
+    height: 2px;
+    position: relative;
+    width: 100%;
+    left: 0;
+    content: '';
+    background-color: #ffffff;
+    transition: 0.3s all;
+}
+
+.burgerParentElNotSelected {
+    margin-bottom: 2%;
+    font-size: 300%;
+    cursor: pointer;
+    width: fit-content;
+    transition: 0.3s all;
+    color: #747474;
+}
+
+.burgerParentElNotSelected::after {
+    display: block;
+    height: 2px;
+    position: relative;
+    width: 0;
+    left: 0;
+    content: '';
+    background-color: #ffffff;
+    transition: 0.3s all;
+}
+
+.burgerParentElNotSelected:hover {
+    color: #ffffff;
+}
+
+.ChildrenElements {
+    transition: 5s all;
+    transform: translateX(0);
+    opacity: 100%;
+    position: relative;
+    border: 10px 0px solid white;
+}
+
+.ChildrenElementsHidden {
+    color: rgb(20, 20, 20);
+    transform: translateX(-20%);
+    opacity: 0;
+    position: relative;
+    pointer-events: none;
+    height: 0;
+    transition: height 0.5s all;
+}
+
+.ShortInfoChildBlock {
+    margin-bottom: 10%;
+    width: 100%;
+}
+
+.TitleChildBlock {
+    font-size: 200%;
+    margin-bottom: 5%;
+    cursor: pointer;
+}
+
+.ShortCommentChildBlock{
+    margin-bottom: 5%;
+    cursor: default;
+}

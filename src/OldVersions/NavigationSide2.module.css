@@ -1,0 +1,27 @@
+.AheadWrapper {
+    background-color: #150666;
+    height: 100%;
+    display: grid;
+    padding: 3%;
+    grid-template-columns: 4fr 2fr 4fr;
+}
+
+.NavBlocksWrapper {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10%;
+    margin-bottom: 100%;
+}
+
+.PhysicsLink {
+    text-decoration: underline blue;
+    transition: all 0.5s;
+    width: 80%;
+    margin-bottom: 4%;
+    box-sizing: border-box;
+}
+
+.PhysicsLink:hover {
+    transform: scale(1.05);
+}

@@ -1,0 +1,12 @@
+.BurgerChildEl {
+    width: fit-content;
+    font-size: 160%;
+    margin-bottom: 5%;
+    cursor: pointer;
+    transition: 0.2s all;
+}
+
+.BurgerChildElLink {
+    text-decoration: none;
+    color: white;
+}

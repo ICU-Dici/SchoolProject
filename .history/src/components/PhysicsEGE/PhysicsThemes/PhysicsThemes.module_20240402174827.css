@@ -1,0 +1,222 @@
+.CenterSlog {
+    position: absolute;
+    top: 0;
+    height: 50vh;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    margin-left: 50%;
+    z-index: 2;
+    font-size: 1vw;
+}
+
+.CenterSlog::before {
+    display: block;
+	position: absolute;
+    margin-left: 10vw;
+    top: 98%;
+	/*изменить на right:0;, чтобы изменить направление подчёркивания */
+    width: 60vh;/*задаём длинну линии до наведения курсора*/
+	height: 3px; /*задаём ширину линии*/
+    transform: rotate(0.25turn);
+	background-color: #000000; /*задаём цвет линии*/
+	content: "";
+	transition: width 1.5s ease-out; /*задаём время анимации*/
+}
+
+.CenterSlog::after {
+    display: block;
+	position: absolute;
+    margin-right: 10vw;
+    top: 98%;
+	/*изменить на right:0;, чтобы изменить направление подчёркивания */
+    width: 60vh;/*задаём длинну линии до наведения курсора*/
+	height: 3px; /*задаём ширину линии*/
+    transform: rotate(0.25turn);
+	background-color: #000000; /*задаём цвет линии*/
+	content: "";
+	transition: width 1.5s ease-out; /*задаём время анимации*/
+}
+
+
+.CMThemeWrap {
+    position: absolute;
+    top: 0;
+    height: 50vh;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    margin-left: 15%;
+    z-index: 2;
+    width: 10vw;
+}
+
+.CMTheme {
+    font-size: 1vw;
+}
+
+.CMTheme::before {
+    display: inline;
+	position: absolute;
+    right: -250%; /*изменить на right:0;, чтобы изменить направление подчёркивания */
+    bottom: 1.2%;
+    width: 250%;/*задаём длинну линии до наведения курсора*/
+	height: 0.3vh; /*задаём ширину линии*/
+	background-color: #000000; /*задаём цвет линии*/
+	content: "";
+	transition: width 1.5s ease-out; /*задаём время анимации*/
+}
+
+
+
+.EThemeWrap {
+    position: absolute;
+    top: 0;
+    height: 20vh;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    margin-left: 15%;
+    z-index: 3;
+    width: 10vw;
+}
+
+.ETheme {
+    font-size: 1vw;
+}
+
+.ETheme::before {
+    display: inline;
+	position: absolute;
+    right: -223%; /*изменить на right:0;, чтобы изменить направление подчёркивания */
+    bottom: 3%;
+	width: 225%;/*задаём длинну линии до наведения курсора*/
+	height: 0.3vh; /*задаём ширину линии*/
+	background-color: #000000; /*задаём цвет линии*/
+	content: "";
+	transition: width 1.5s ease-out; /*задаём время анимации*/
+}
+
+
+.NPThemeWrap {
+    position: absolute;
+    top: 0;
+    height: 80vh;
+    width: 10vw;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    margin-left: 15%;
+    z-index: 1;
+}
+
+
+.NPTheme {
+    
+    font-size: 1vw;
+}
+
+.NPTheme::after {
+    display: inline;
+	position: absolute;
+    right: -223%; /*изменить на right:0;, чтобы изменить направление подчёркивания */
+    bottom: 1%;
+	width: 225%;/*задаём длинну линии до наведения курсора*/
+	height: 0.3vh; /*задаём ширину линии*/
+	background-color: #000000; /*задаём цвет линии*/
+	content: "";
+	transition: width 1.5s ease-out; /*задаём время анимации*/
+}
+
+.MKTThemeWrap {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 20vh;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    margin-right: 17%;
+    z-index: 3;
+    width: 10vw;
+}
+
+.MKTTheme {
+
+    font-size: 1vw;
+}
+
+.MKTTheme::after {
+    display: inline;
+	position: absolute;
+    left: -157%; /*изменить на right:0;, чтобы изменить направление подчёркивания */
+    bottom: 2%;
+	width: 140%;/*задаём длинну линии до наведения курсора*/
+	height: 0.3vh; /*задаём ширину линии*/
+	background-color: #000000; /*задаём цвет линии*/
+	content: "";
+	transition: width 1.5s ease-out; /*задаём время анимации*/
+}
+
+
+
+.OThemeWrap {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 50vh;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    margin-right: 17%;
+    z-index: 2;
+    width: 10vw;
+}
+
+.OTheme {
+
+    font-size: 1vw;
+}
+
+.OTheme::after {
+    display: inline;
+	position: absolute;
+    left: -187%; /*изменить на right:0;, чтобы изменить направление подчёркивания */
+    bottom: 2%;
+	width: 170%;/*задаём длинну линии до наведения курсора*/
+	height: 0.3vh; /*задаём ширину линии*/
+	background-color: #000000; /*задаём цвет линии*/
+	content: "";
+	transition: width 1.5s ease-out; /*задаём время анимации*/
+}
+
+.TORThemeWrap {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 80vh;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    margin-right: 17%;
+    z-index: 1;
+    width: 10vw;
+}
+
+.TORTheme::after {
+    display: inline;
+	position: absolute;
+    left: -157%; /*изменить на right:0;, чтобы изменить направление подчёркивания */
+    bottom: 2%;
+	width: 140%;/*задаём длинну линии до наведения курсора*/
+	height: 0.3vh; /*задаём ширину линии*/
+	background-color: #000000; /*задаём цвет линии*/
+	content: "";
+	transition: width 1.5s ease-out; /*задаём время анимации*/
+}
+
+.TORTheme {
+
+    font-size: 1vw;
+}
+

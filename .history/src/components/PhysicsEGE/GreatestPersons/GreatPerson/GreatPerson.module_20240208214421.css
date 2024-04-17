@@ -1,0 +1,78 @@
+.Person {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.PersonImg {
+    width: 100%;
+    z-index: 2;
+    border: 3px solid rgb(58, 58, 58);
+    cursor: pointer;
+    transition: 0.3s all;
+}
+
+.hoverName {
+    position: absolute;
+    color: white;
+    z-index: 5;
+    font-family: TT Livret;
+    padding-top: 10%;
+    cursor: pointer;
+    letter-spacing: 2px;
+    font-weight: 0;
+    word-spacing: 4px;
+    font-size: 250%;
+    opacity: 0;
+    transition: 0.3s all;
+}
+
+.hoverShortInfo {
+    color: white;
+    z-indexrgb(0, 0, 0)
+    font-family: TT Livret;
+    padding-top: 15%;
+    padding-left: 5%;
+    cursor: pointer;
+    letter-spacing: 2px;
+    font-weight: 0;
+    word-spacing: 4px;
+    font-size: 150%;
+    opacity: 0;
+    transition: 0.3s all;
+}
+
+.PersonName {
+    text-align: center;
+    z-index: 0;
+    color: #000000;
+    z-index: 5;
+    font-family: TT Livret;
+    cursor: pointer;
+    letter-spacing: 2px;
+    font-weight: 0;
+    word-spacing: 4px;
+    font-size: 250%;
+    transition: 0.3s all;
+}
+
+.Person:hover .PersonName{
+    transform: translateY(50%);
+    opacity: 0;
+}
+
+.Person:hover .PersonImg {
+    filter: brightness(40%);
+    color: black;
+}
+
+.Person:hover .hoverName {
+    transform: translateX(+15%);
+    opacity: 1;
+}
+
+.Person:hover .hoverShortInfo {
+    transform: translateX(-15%);
+    opacity: 1;
+}

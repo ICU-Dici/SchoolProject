@@ -1,0 +1,18 @@
+.Wrapper {
+    height: 100vh;
+}
+
+.MainCenterInfoWrapper { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.LogoUniversity {
+    width: 20vw;
+    display: block;
+}
+.UniversityName {
+    display: block;
+}

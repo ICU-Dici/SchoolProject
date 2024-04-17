@@ -1,0 +1,109 @@
+.CenterSlog {
+    position: absolute;
+    top: 0;
+    height: 50vh;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    margin-left: 50%;
+    z-index: 2;
+    font-size: 1vw;
+}
+
+.CMTheme {
+    position: absolute;
+    top: 0;
+    margin-top: 50%;
+    margin-left: 15%;
+    z-index: 2;
+    font-size: 1vw;
+}
+
+.CMTheme::after {
+    display: block;
+	position: absolute;
+	left: 75%; /*изменить на right:0;, чтобы изменить направление подчёркивания */
+	width: 0;/*задаём длинну линии до наведения курсора*/
+	height: 1vh; /*задаём ширину линии*/
+	background-color: #000000; /*задаём цвет линии*/
+	content: "";
+	transition: width 1.5s ease-out; /*задаём время анимации*/
+}
+
+.CMTheme::before {
+    display: inline;
+	position: absolute;
+    right: -250%; /*изменить на right:0;, чтобы изменить направление подчёркивания */
+    bottom: 1.2%;
+	width: 0;/*задаём длинну линии до наведения курсора*/
+	height: 0.3vh; /*задаём ширину линии*/
+	background-color: #000000; /*задаём цвет линии*/
+	content: "";
+	transition: width 1.5s ease-out; /*задаём время анимации*/
+}
+
+
+.CMTheme:hover::before {
+    position: absolute;
+    width: 250%;
+}
+
+.OTheme {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 50vh;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    margin-right: 17%;
+    font-size: 1vw;
+}
+
+.TORTheme {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 80vh;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    margin-right: 17%;
+    font-size: 1vw;
+}
+
+.ETheme {
+    position: absolute;
+    top: 0;
+    height: 20vh;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    margin-left: 15%;
+    z-index: 3;
+    font-size: 1vw;
+}
+
+.MKTTheme {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 20vh;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    margin-right: 17%;
+    font-size: 1vw;
+}
+
+.NPTheme {
+    position: absolute;
+    top: 0;
+    height: 80vh;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    margin-left: 15%;
+    z-index: 1;
+    font-size: 1vw;
+}

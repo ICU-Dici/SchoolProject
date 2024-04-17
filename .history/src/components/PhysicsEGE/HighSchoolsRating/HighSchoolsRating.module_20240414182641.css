@@ -1,0 +1,158 @@
+.AheadWrapper {
+    height: 100vh;
+    overflow-x: hidden;
+}
+.Wrapper {
+    position: relative;
+    bottom: 100vh;
+    height: 100vh;
+}
+
+.BackgroundImgMIPT {
+    background: url('https://cdn.nationalprojects.ru/upload/iblock/cd5/svlb11t6laxv3ipsx2nt7f1d1y6are2n.jpeg');
+    filter: brightness(50%);
+    background-repeat: no-repeat;
+    background-size: 100vw;
+    margin-bottom: -50%;
+    height: 100vh;
+    min-width: 100vw;
+    position: relative;
+}
+
+.BackgroundImgMEPHI {
+    background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/%D0%9D%D0%98%D0%AF%D0%A3_%C2%AB%D0%9C%D0%98%D0%A4%D0%98%C2%BB%2C_%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D1%8B%D0%B9_%D0%BA%D0%BE%D1%80%D0%BF%D1%83%D1%81_%D0%B8_%D0%BF%D1%80%D0%BE%D1%85%D0%BE%D0%B4%D0%BD%D0%B0%D1%8F%2C_12.12.12.JPG/2560px-%D0%9D%D0%98%D0%AF%D0%A3_%C2%AB%D0%9C%D0%98%D0%A4%D0%98%C2%BB%2C_%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D1%8B%D0%B9_%D0%BA%D0%BE%D1%80%D0%BF%D1%83%D1%81_%D0%B8_%D0%BF%D1%80%D0%BE%D1%85%D0%BE%D0%B4%D0%BD%D0%B0%D1%8F%2C_12.12.12.JPG');
+    filter: brightness(50%);
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    height: 100vh;
+    min-width: 100vw;
+    position: relative;
+}
+
+.Specialities {
+    filter: brightness(100%);
+    color: white;
+    width: fit-content;
+    margin-left: 2%;
+    margin-top: 15%;
+    font-size: 100%;
+    width: 25vw;
+}
+
+.SpecsTitle {
+    font-size: 120%;
+}
+
+.leadingSpec {
+    font-size: 120%;
+    display: grid;
+    grid-template-columns: 4fr 2fr;
+}
+
+.NotLeadingSpec {
+    margin-top: 2%;
+}
+.spec {
+    display: grid;
+    grid-template-columns: 4fr 2fr;
+}
+
+.NotLeadingSpec div {
+    margin-bottom: 1%;
+}
+
+.MainCenterInfoWrapper { 
+    margin-top: -17%;
+    height: 100%;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    filter: brightness(100%);
+}
+
+.MainCenterInfo {
+    text-align: center;
+    filter: brightness(100%);
+}
+
+.LogoUniversity {
+    width: 30vw;
+    filter: brightness(100%);
+}
+.UniversityName {
+    filter: brightness(100%);
+    color: white;
+    font-size: 300%;
+}
+
+.transcript {
+    font-size: 50%;
+}
+
+.RealWebSiteLink {
+    filter: brightness(100%);
+    margin-top: -35%;
+    background-color: rgb(255, 255, 255);
+    width: fit-content;
+    padding: 1%;
+    border: 2px black solid;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+
+    color: black;
+}
+
+.href {
+    text-decoration: none;
+}
+
+
+.RealWebSiteLink:hover {
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+
+.Ratings {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    filter: brightness(100%);
+    width: 35%;
+    margin-top: 5%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto; 
+    color: black;
+}
+
+.CountryRating {
+    padding: 10% 2% 10% 2%;
+    background-color: white;
+    border: 2px solid rgb(139, 139, 139);
+    border-radius: 1em;
+    margin-right: 2.5%;
+}
+
+.GlobalRating {
+    padding: 10% 2% 10% 2%;
+    background-color: white;
+    border: 2px solid rgb(139, 139, 139);
+    border-radius: 1em;
+    margin-left: 2.5%;
+}
+
+.Number {
+    position: relative;
+    bottom: 65%;
+    font-size: 1vw;
+}
+
+.text {
+    margin-top: -5%;
+    margin-bottom: -5%;
+}
+
+.RatingIMG {
+    width: 3vw;
+}

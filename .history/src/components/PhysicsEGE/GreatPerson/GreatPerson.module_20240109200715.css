@@ -1,0 +1,12 @@
+.PersonImg {
+    width: 300px;
+    height: 400px;
+    display: inline;
+}
+
+.PersonInfo {
+    width: 300px;
+    position: absolute;
+    top: 0;
+    z-index: 0;
+}

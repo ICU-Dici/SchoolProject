@@ -1,0 +1,5 @@
+.AppWrapper {
+    grid-template-areas: 
+    'H H';
+    grid-template-rows: 60px 1fr;
+}

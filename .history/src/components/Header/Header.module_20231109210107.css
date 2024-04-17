@@ -1,0 +1,7 @@
+.header {
+    grid-area: H;
+    background-color: black;
+    grid-template-columns: 10fr 1fr;
+    display: grid;
+    height: 30%;
+}

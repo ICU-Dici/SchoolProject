@@ -1,0 +1,40 @@
+
+
+
+.firstSlide {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(20, 20, 20);
+    color: white;
+}
+
+.MainText {
+margin-top: 25%;
+}
+
+.Title {
+    font-size: 300%;
+    border-bottom: 2px solid white;
+    margin-bottom: 3%;
+}
+
+.Navigation {
+    color: black;
+}
+
+.NavigationUL {
+    margin-top: 20%;
+    padding: 5%;
+    background-color: white;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 160%;
+}
+
+.NavigationUL li {
+    margin-bottom: 5%;
+    list-style-type: none;
+}

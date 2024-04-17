@@ -1,0 +1,58 @@
+.headerWrapper {
+    color: rgb(255, 255, 255);
+    height: 100%;
+    width: 100%;
+}
+
+.MainInfo {
+    padding-top: 22%;
+    padding-bottom: 22%;
+    font-family: New Century Schoolbook, TeX Gyre Schola, serif;
+    text-align: center;
+    
+}
+
+.PhysicParagraph {
+    font-size: 400%;
+}
+
+.citatum {
+    font-size: 200%;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.PhysicParagraph::selection {
+    background-color: white;
+    color: black;
+}
+
+.citatum::selection {
+    background-color: white;
+    color: black;
+}
+
+/* .MainBody {
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: 2fr 20fr 2fr;
+} */
+
+.MainBody {
+    height: 100vh;
+
+    background: url('C:\Users\igrka\Desktop\IP\design\PhysicsImage.jpg');
+    background-size: 100%;
+    background: rgb(255,255,255);
+background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 95%, rgba(255,255,255,1) 100%);
+    
+    background-repeat: no-repeat;
+    
+    filter: brightness(100%);
+    
+    
+    }

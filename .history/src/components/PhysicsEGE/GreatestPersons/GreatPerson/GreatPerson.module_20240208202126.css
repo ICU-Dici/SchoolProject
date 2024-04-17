@@ -1,0 +1,19 @@
+.Person {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.PersonImg {
+    width: 100%;
+    z-index: 2;
+}
+
+.PersonName {
+    text-align: center;
+}
+
+.PersonInfo:hover {
+    transform: translateX(+100%);
+}

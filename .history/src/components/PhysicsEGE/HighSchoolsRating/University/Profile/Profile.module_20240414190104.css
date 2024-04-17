@@ -1,0 +1,16 @@
+.spec {
+    display: grid;
+    grid-template-columns: 4fr 2fr;
+}
+
+.marks1 {
+    display: inline;
+}
+
+.marks2 {
+    display: inline;
+}
+
+.maks {
+    display: inline;
+}

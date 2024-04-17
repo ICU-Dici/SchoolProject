@@ -1,0 +1,15 @@
+.headerWrapper {
+    grid-area: H;
+    background-color: #bebebe;
+    grid-template-columns: 10fr 1fr;
+    display: grid;
+    
+    padding: 1.5%;
+}
+
+.MainBody {
+    width: 70%;
+    background-color: aliceblue;
+    margin-left: auto;
+    margin-right: auto;
+}

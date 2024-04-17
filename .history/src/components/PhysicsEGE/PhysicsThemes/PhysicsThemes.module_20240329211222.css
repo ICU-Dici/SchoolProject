@@ -1,0 +1,15 @@
+.CenterSlog {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.CMTheme {
+    position: absolute;
+    top: 0;
+    height: 50vh;
+    display: flex;
+    align-items: bottom;
+    vertical-align: bottom;
+}

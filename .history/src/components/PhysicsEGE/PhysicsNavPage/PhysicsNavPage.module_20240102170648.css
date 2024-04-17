@@ -1,0 +1,67 @@
+.burgerMenuWrap {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(20, 20, 20);
+    position: fixed;
+    z-index: 50;
+    color: white;
+}
+
+.ParentsElements {
+    width: 80%;
+    margin-left: 5%;
+}
+
+.ChildrenElements {
+    margin-bottom: auto;
+    transition: 0.25s all;
+    position: fixed;
+}
+
+.ChildrenElementsHidden {
+    color: rgb(20, 20, 20);
+    transform: translateX(-10%);
+    transition: 0.25s all;
+    position: fixed;
+}
+
+.interactionWrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+.HeaderBurgerMenu{ 
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+    margin-bottom: 5%;
+    display: grid;
+    grid-template-columns: 2fr 10fr 2fr;
+}
+
+
+.logoBurgMenu {
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.closeBurgMenu {
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 130%;
+    padding: 2% 6% 2% 6%;
+    border: 1px solid rgb(136, 136, 136);
+    border-radius: 2em;
+    cursor: pointer;
+    background-color: rgb(20, 20, 20);
+    transition: all 0.2s;
+}
+
+.closeBurgMenu:hover {
+    border: 1px solid rgb(255, 255, 255);
+}

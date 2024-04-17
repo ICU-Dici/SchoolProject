@@ -1,0 +1,99 @@
+.CenterSlog {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.CMTheme {
+    position: absolute;
+    top: 0;
+    height: 50vh;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    margin-left: 15%;
+    z-index: 2;
+}
+
+.CMTheme::after {
+    display: block;
+	position: absolute;
+	left: 75%; /*изменить на right:0;, чтобы изменить направление подчёркивания */
+	width: 0;/*задаём длинну линии до наведения курсора*/
+	height: 2px; /*задаём ширину линии*/
+	background-color: #000000; /*задаём цвет линии*/
+	content: "";
+	transition: width 1.5s ease-out; /*задаём время анимации*/
+}
+
+.CMTheme::before {
+    display: inline;
+	position: absolute;
+    margin-left: 400%; /*изменить на right:0;, чтобы изменить направление подчёркивания */
+	width: 0;/*задаём длинну линии до наведения курсора*/
+	height: 4px; /*задаём ширину линии*/
+	background-color: #000000; /*задаём цвет линии*/
+	content: "";
+	transition: width 1.5s ease-out; /*задаём время анимации*/
+}
+
+
+.CMTheme:hover::before {
+    width: 300%;
+}
+
+.OTheme {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 50vh;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    margin-right: 17%;
+}
+
+.TORTheme {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 80vh;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    margin-right: 17%;
+}
+
+.ETheme {
+    position: absolute;
+    top: 0;
+    height: 20vh;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    margin-left: 15%;
+    z-index: 3;
+}
+
+.MKTTheme {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 20vh;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    margin-right: 17%;
+}
+
+.NPTheme {
+    position: absolute;
+    top: 0;
+    height: 80vh;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    margin-left: 15%;
+    z-index: 1;
+}

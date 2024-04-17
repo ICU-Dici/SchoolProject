@@ -1,0 +1,22 @@
+.spec {
+    display: grid;
+    grid-template-columns: 4fr 2fr;
+    background-color: white;
+    color: black;
+}
+
+.title {
+    border-right: 2px solid black;
+}
+
+.marks1 {
+    display: inline;
+}
+
+.marks2 {
+    display: inline;
+}
+
+.marks3 {
+    display: inline;
+}

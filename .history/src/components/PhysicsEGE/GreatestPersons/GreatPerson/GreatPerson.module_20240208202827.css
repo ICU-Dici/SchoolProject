@@ -1,0 +1,21 @@
+.Person {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.PersonImg {
+    width: 100%;
+    z-index: 2;
+    border: 3px solid rgb(58, 58, 58);
+}
+
+.PersonName {
+    text-align: center;
+    transform: translateY(0%);
+}
+
+.PersonImg:hover .PersonName {
+    color: aqua;
+}

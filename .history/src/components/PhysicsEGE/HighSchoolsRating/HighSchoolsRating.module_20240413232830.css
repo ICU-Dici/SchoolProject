@@ -1,0 +1,70 @@
+.AheadWrapper {
+    height: 100vh;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+.Wrapper {
+    position: relative;
+    bottom: 100vh;
+    height: 100vh;
+}
+
+.BackgroundImg {
+    background: url('https://cdn.nationalprojects.ru/upload/iblock/cd5/svlb11t6laxv3ipsx2nt7f1d1y6are2n.jpeg');
+    filter: brightness(50%);
+    background-repeat: no-repeat;
+    background-size: 100vw;
+    height: 100vh;
+    min-width: 100vw;
+    position: relative;
+}
+
+.Specialities {
+    filter: brightness(100%);
+    color: white;
+    width: fit-content;
+    margin-left: 2%;
+    margin-top: 15%;
+    font-size: 150%;
+    width: 30vw;
+}
+
+.SpecsTitle {
+    font-size: 150%;
+}
+
+.leadingSpec {
+    font-size: 150%;
+}
+
+.NotLeadingSpec {
+    margin-left: 5%;
+    margin-top: 2%;
+}
+
+.NotLeadingSpec div {
+    margin-bottom: 1%;
+}
+
+.MainCenterInfoWrapper { 
+    margin-top: -10%;
+    height: 100%;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    filter: brightness(100%);
+}
+
+.MainCenterInfo {
+    text-align: center;
+    filter: brightness(100%);
+}
+
+.LogoUniversity {
+    width: 30vw;
+    filter: brightness(100%);
+}
+.UniversityName {
+    filter: brightness(100%);
+    color: white;
+}

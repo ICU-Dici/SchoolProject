@@ -1,0 +1,6 @@
+.header {
+    grid-area: H;
+    background-color: black;
+    height: 20%;
+    position: fixed;
+}

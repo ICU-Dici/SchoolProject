@@ -1,0 +1,14 @@
+
+
+
+.firstSlide {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    height: 100vh;
+    width: 100vh;
+    background:
+    url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLM51Yxc1u-J_nMDNQNlPpENtqy09YRHMFY4gzDNMDMQ&s');
+    background-size: 100%;
+    
+    background-repeat: no-repeat;
+}

@@ -1,0 +1,10 @@
+.CenterSlog {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.CenterSlog NavLink{
+    position: absolute;
+}

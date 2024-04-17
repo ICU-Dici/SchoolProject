@@ -1,0 +1,58 @@
+
+.BackgroundImage {
+    background: url('https://upload.wikimedia.org/wikipedia/commons/7/75/Opening_Ceremony_IAU2006GA.jpg');
+    filter: brightness(40%);
+    background-repeat: no-repeat;
+    background-size: 95vw;
+    height: 100vh;
+    width: 95vw;
+    position: absolute;
+}
+
+.firstSlide {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(20, 20, 20);
+    color: white;
+}
+
+.MainText {
+margin-top: 25%;
+margin-left: 3%;
+font-size: 150%;
+filter: brightness(100%);
+}
+
+.Title {
+    font-size: 250%;
+    border-bottom: 2px solid white;
+    margin-bottom: 3%;
+    width: fit-content;
+}
+
+.Navigation {
+    color: black;
+    filter: brightness(100%);
+}
+
+.NavigationUL {
+    background-color: white;
+    width: 30vw;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 100%;
+    
+}
+
+.NavigationUL li {
+    list-style-type: none;
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.658);
+}
+
+.NavigationUL li:hover {
+    color: black;
+}

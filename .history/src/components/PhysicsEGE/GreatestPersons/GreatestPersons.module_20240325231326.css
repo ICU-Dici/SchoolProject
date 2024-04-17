@@ -1,0 +1,171 @@
+.MainWrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 5% 2% 2% 2%;
+    background-color: rgb(27, 27, 27);
+}
+
+.BiographyWindowWrapper {
+    background-color: rgba(0, 0, 0, 0.637);
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: all 0.2s;
+    opacity: 1;
+    
+}
+
+.NoBiographyWindowWrapper {
+    background-color: rgba(0, 0, 0, 0.637);
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.25s;
+}
+
+.NoBiographyWindow {
+    width: 65%;
+    margin-top: 4%;
+    margin-left: 17.5%;
+    z-index: 1000;
+    background-color: rgb(17, 17, 17);
+    border-radius: 1em;
+    border: 1px solid rgb(216, 216, 216);
+    position: absolute;
+    text-align: left;
+    color: white;
+    opacity: 0;
+    transform: scale(100%);
+    transition: all 0.5s;
+}
+
+.NoCurrentScientistsNameNoWindow {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(17, 17, 17);
+    font-size: 300%;
+    text-align: center;
+    z-index: 100000;
+    opacity: 1;
+    border-radius: 0.3em 0em 0em 0.3em;
+}
+
+.CurrentScientistsNameNoWindow::after {
+    display: block;
+	position: absolute;
+	left: 0; /*изменить на right:0;, чтобы изменить направление подчёркивания */
+	width: 0;/*задаём длинну линии до наведения курсора*/
+	height: 2px; /*задаём ширину линии*/
+	background-color: #00a650; /*задаём цвет линии*/
+	content: "";
+	transition: width 1.5s ease-out; /*задаём время анимации*/
+}
+
+.CurrentScientistsNameNoWindow:active::after {
+    width: 100%;
+}
+
+.CurrentScientistsNameNoWindow {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 300%;
+    opacity: 0;
+    text-align: center;
+    z-index: 9999;
+    transition: all 1s 1.5s;
+}
+
+
+.BiographyWindow {
+    width: 65%;
+    margin-top: 4%;
+    margin-left: 17.5%;
+    z-index: 1000;
+    background-color: rgb(17, 17, 17);
+    border-radius: 1em 0em 0em 1em;
+    border: 1px solid rgb(216, 216, 216);
+    position: absolute;
+    text-align: left;
+    color: white;
+    opacity: 1;
+    transition: all 0.4s ;
+}
+
+.ScientistWindowPhoto {
+    float:left;
+    margin-right: 3%;
+    width: 465px;
+    height: 665px;
+    border-radius: 1em 0em 0em 1em;
+}
+
+.closeBurgMenu {
+    position: fixed;
+    width: fit-content;
+    font-size: 160%;
+    margin-left: 66%;
+    margin-top: -2%;
+    cursor: pointer;
+    background-color: rgba(17, 17, 17, 0);
+    padding: 0.1% 0.5% 0.1% 0.5%;
+    z-index: 2000;
+    color: rgb(175, 175, 175);
+}
+
+.closeBurgMenuText {
+    transition: 0.2s all;
+}
+
+.NocloseBurgMenu {
+    position: fixed;
+    width: fit-content;
+    font-size: 160%;
+    margin-left: 66%;
+    margin-top: -2%;
+    cursor: pointer;
+    background-color: rgba(17, 17, 17, 0);
+    padding: 0.1% 0.5% 0.1% 0.5%;
+    z-index: 2000;
+    color: rgb(175, 175, 175);
+    opacity: 0;
+    pointer-events: none;
+}
+
+
+.closeBurgMenuText:hover {
+    color: white;
+}
+
+.closeBurgMenuText {
+    display: inline;
+}
+
+.closeBurgMenuSymbol {
+    display: none;
+    z-index: 2;
+}
+
+.ShortInfo {
+    padding-left: 1%;
+}
+
+.ScientistsName {
+    font-size: 200%;
+}
+
+.discovery {
+    margin-bottom: 1%;
+}

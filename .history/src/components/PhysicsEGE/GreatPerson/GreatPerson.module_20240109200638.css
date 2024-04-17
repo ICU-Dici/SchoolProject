@@ -1,0 +1,10 @@
+.PersonImg {
+    width: 300px;
+    height: 400px;
+    display: inline;
+}
+
+.PersonInfo {
+    display: inline;
+    width: 300px;
+}

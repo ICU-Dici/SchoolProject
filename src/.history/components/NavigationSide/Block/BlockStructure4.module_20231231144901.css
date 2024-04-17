@@ -1,0 +1,23 @@
+
+.Wrapper {
+    width: 100%;
+    height: 100%;
+}
+
+.Block{
+    display: block;
+    margin-left: auto;
+    margin-right: auto 
+}
+
+.MainBodyBlock {
+    width: 100%;
+	height: 7em;
+	background: #ffffff;
+    padding: 8%;
+    color: rgb(219, 197, 0);
+    font-size: 1.5em;
+    font-family: New Century Schoolbook, TeX Gyre Schola, serif;
+    letter-spacing: 1.5px;
+    font-stretch: ultra-expanded
+}

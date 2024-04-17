@@ -1,0 +1,25 @@
+.Wrapper {
+    height: 100vh;
+    background: url('https://lh3.googleusercontent.com/p/AF1QipMykylllV_FINbu7HCA-qJi34t_vs8kBmwewxzs=s680-w680-h510');
+    background-repeat: no-repeat;
+    background-size: 100vw;
+}
+
+.MainCenterInfoWrapper { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.MainCenterInfo {
+    text-align: center;
+}
+
+.LogoUniversity {
+    width: 20vw;
+    display: block;
+}
+.UniversityName {
+    display: block;
+}

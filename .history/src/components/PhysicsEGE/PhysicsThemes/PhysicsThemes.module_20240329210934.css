@@ -1,0 +1,12 @@
+.CenterSlog {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.CMTheme {
+    position: absolute;
+    top: 0;
+    margin-top: 20%;
+}

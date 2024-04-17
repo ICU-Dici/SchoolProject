@@ -1,0 +1,90 @@
+.headerWrapper {
+    color: rgb(255, 255, 255);
+    height: 100%;
+    width: 100%;
+}
+
+.MainInfo {
+
+    font-family: New Century Schoolbook, TeX Gyre Schola, serif;
+    text-align: center;
+}
+
+.PhysicParagraph {
+    font-size: 400%;
+}
+
+.citatum {
+    font-size: 200%;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.PhysicParagraph::selection {
+    background-color: white;
+    color: black;
+}
+
+.citatum::selection {
+    background-color: white;
+    color: black;
+}
+
+/* .MainBody {
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: 2fr 20fr 2fr;
+} */
+
+.MainBody {
+
+
+    background: url('C:\Users\igrka\Desktop\IP\design\PhysicsImage.jpg');
+    
+    
+    background-size: 100%;
+    
+    
+    background-repeat: no-repeat;
+    
+    filter: brightness(100%);
+    
+    
+    }
+
+
+.burger {
+    background-color: black;
+    border: 1px rgb(85, 85, 85) solid;
+    width: fit-content;
+    padding: 1% 1.5% 1% 1.5%;
+    display: grid;
+    grid-template-columns: 5fr 5fr;
+    text-align: center;
+    position: absolute;
+    right: 0;
+    transition: 0.1s linear;
+}
+
+.burger:hover {
+    background-color: rgb(85, 85, 85);
+}
+
+.burgerDecorEl {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: 0.2em;
+    transform: skew(180deg);
+	background: #ffffff;
+    margin-bottom: 7%;
+    margin-top: 7%;
+}
+
+.BurgerText {
+    font-size: 150%;
+}

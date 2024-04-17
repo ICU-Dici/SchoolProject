@@ -1,0 +1,9 @@
+.BackgroundImgMIPT {
+    background: url('https://cdn.nationalprojects.ru/upload/iblock/cd5/svlb11t6laxv3ipsx2nt7f1d1y6are2n.jpeg');
+    filter: brightness(50%);
+    background-repeat: no-repeat;
+    background-size: 100vw;
+    height: 100vh;
+    min-width: 100vw;
+    position: relative;
+}

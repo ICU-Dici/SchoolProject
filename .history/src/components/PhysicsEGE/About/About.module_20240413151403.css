@@ -1,0 +1,17 @@
+
+
+
+.firstSlide {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    height: 100vh;
+    width: 100vh;
+    background:
+    linear-gradient(180deg, rgb(12, 12, 12) 0%, rgba(255,255,255,0) 25%, rgb(15, 15, 15) 72%),
+    linear-gradient(270deg, rgb(12, 12, 12) 0%, rgba(255,255,255,0) 50%, rgba(255,255,255,0) 50%, rgb(12, 12, 12) 100%),
+
+    url('C:\Users\igrka\Desktop\IP\design\PhysicsImage.jpg');
+    background-size: 100%;
+    
+    background-repeat: no-repeat;
+}

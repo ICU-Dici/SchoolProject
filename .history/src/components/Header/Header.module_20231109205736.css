@@ -1,0 +1,5 @@
+.header {
+    grid-area: H;
+    background-color: black;
+    max-height: 40%;
+}

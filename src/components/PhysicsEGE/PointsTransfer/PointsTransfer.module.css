@@ -1,0 +1,72 @@
+.Wrapper {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+::selection {
+    background: #2c2c2c; /* Safari */
+    color: white;
+}
+.UiBlock {
+    margin:auto;
+    text-align: center;
+    padding-top: 35%;
+}
+
+.enterPoints {
+    margin-right: 1%;
+    border: 0;
+    font-family: montserrat,Arial,sans-serif;
+    font-size: 200%;
+    width: 7%;
+}
+.enterPoints::-webkit-inner-spin-button,
+
+
+.enterPoints::-webkit-outer-spin-button {
+
+
+-webkit-appearance: none;
+
+
+margin: 0;
+
+
+}
+
+.results{
+    font-size: 150%;
+}
+
+.ChangePointsNumber button {
+    background-color: white;
+    border: 0;
+}
+
+.enterPoints:focus {
+    border: 0;
+    outline: none;
+    background-color: rgb(194, 194, 194);
+}
+
+.CountPoints {
+    border-radius: 0;
+    border: 0;
+    cursor: pointer;
+    background-color: rgb(255, 255, 255);
+    font-family: montserrat,Arial,sans-serif;
+    font-size: 200%;
+}
+.ChangePointsNumber .minus {
+    margin-right: 10%;
+    font-size: 200%;
+    font-weight: bold;
+    cursor: pointer;
+}
+.ChangePointsNumber .plus {
+    margin-left: 10%;
+    font-size: 200%;
+    font-weight: bold;
+    cursor: pointer;
+}

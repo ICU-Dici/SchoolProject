@@ -1,0 +1,14 @@
+.headerWrapper {
+    grid-area: H;
+    background-color: #bebebe;
+    display: grid;
+    padding: 1.5%;
+}
+
+.MainBody {
+    width: 70%;
+    background-color: aliceblue;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}

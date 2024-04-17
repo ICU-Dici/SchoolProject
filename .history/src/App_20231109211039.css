@@ -1,0 +1,14 @@
+.AppWrapper {
+    display: grid;
+    width: 70%;
+    margin: 0 auto;
+    grid-template-areas: 
+    ' H '
+    ' M ';
+    grid-template-rows: 60px 1fr;
+    grid-template-columns: 2fr 10fr;
+    grid-gap: 10px; /*grid-gap- это расстояния между элементами grid-сетки*/
+  }
+.MainBody {
+    grid-area: M;
+}

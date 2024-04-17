@@ -1,0 +1,23 @@
+import React from "react";
+import s from './HeaderCopy.module.css'
+import { NavLink } from "react-router-dom";
+
+const Header = () =>{
+    let path = '/Physics/PointsTransfer/'
+    return(
+        <header className={s.headerWrapper}>
+            <img className={s.DecorImg1} src="https://photos.fife.usercontent.google.com/pw/ABLVV84EWqaT1wot_9suigZsfARyVt9IapQObrIcUN1YcxpjTUKupePdbDgR=w166-h222-no?authuser=0"/>
+            <div className={s.MainBody}>
+                <div className={s.MainInfo}>
+                    <div className={s.PhysicParagraph}>Физика</div>
+                    <div className={s.citatum}>"Anyone who has never made a mistake has never tried anything new." - Albert Einstein</div>
+                    </div>
+                
+            </div>
+            
+        </header>
+        
+    )
+}
+
+export default Header;

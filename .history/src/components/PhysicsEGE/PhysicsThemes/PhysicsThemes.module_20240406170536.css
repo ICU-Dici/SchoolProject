@@ -1,0 +1,674 @@
+body{
+    background-color: rgb(27, 27, 27);
+}
+
+.CurrentTheme {
+    width: 100vw;
+    height: 100vh;
+    z-index: 0;
+    background-color: #ffffff;
+    display: grid;
+    grid-template-rows: 2fr 15fr;
+}
+
+.CurrentContent {
+    display: grid;
+    grid-template-columns: 6fr 4fr;
+}
+
+.CurrentThemeTitle {
+    font-size: 6em;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    border: white solid 2px;
+    font-family: TT Livret;
+    cursor: pointer;
+    letter-spacing: 2px;
+    font-weight: 0;
+    word-spacing: 4px;
+    text-decoration: none;
+}
+
+.CurrentContentContent {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+/* 
+.SubTopic {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    border: solid 3px black;
+    margin-bottom: -70%;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.SubTopicName {
+    color: #ffffff;
+    position: relative;
+    bottom: 102.5%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    font-size: 150%;
+    background-color: rgba(0, 0, 0, 0.575);
+}
+
+.backgroundImg {
+    position: static;
+    width: 100%;
+    height: 100%;
+
+} */
+
+
+.CenterSlog {
+    position: absolute;
+    top: 0;
+    height: 50vh;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    margin-left: 50%;
+    z-index: 2;
+    font-size: 1vw;
+    color: white;
+    transition: 1s 0.6s all;
+}
+
+.CenterSlog::before {
+    display: block;
+	position: absolute;
+    margin-left: 10vw;
+    top: 98%;
+	/*изменить на right:0;, чтобы изменить направление подчёркивания */
+    width: 60vh;/*задаём длинну линии до наведения курсора*/
+	height: 3px; /*задаём ширину линии*/
+    transform: rotate(0.25turn);
+	background-color: #ffffff; /*задаём цвет линии*/
+	content: "";
+	transition: width 1.5s 1.6s ease-out; /*задаём время анимации*/
+}
+
+.CenterSlog::after {
+    display: block;
+	position: absolute;
+    margin-right: 10vw;
+    top: 98%;
+	/*изменить на right:0;, чтобы изменить направление подчёркивания */
+    width: 60vh;/*задаём длинну линии до наведения курсора*/
+	height: 3px; /*задаём ширину линии*/
+    transform: rotate(0.25turn);
+	background-color: #ffffff; /*задаём цвет линии*/
+	content: "";
+	transition: width 1.5s 1.6s ease-out; /*задаём время анимации*/
+}
+
+
+.CMThemeWrap {
+    position: absolute;
+    top: 0;
+    height: 50vh;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    margin-left: 15%;
+    z-index: 2;
+    width: 10vw;
+}
+
+.CMTheme {
+    font-size: 2vw;
+    background-color: rgb(0, 0, 0);
+    padding: 10%;
+    color: rgb(255, 255, 255);
+    border: white solid 2px;
+    font-family: TT Livret;
+    cursor: pointer;
+    letter-spacing: 2px;
+    font-weight: 0;
+    word-spacing: 4px;
+    text-decoration: none;
+    transition: 1s 4.6s all;
+}
+
+.CMTheme::before {
+    display: inline;
+	position: absolute;
+    right: -250%; /*изменить на right:0;, чтобы изменить направление подчёркивания */
+    bottom: 1.2%;
+    width: 250%;/*задаём длинну линии до наведения курсора*/
+	height: 0.3vh; /*задаём ширину линии*/
+	background-color: white; /*задаём цвет линии*/
+	content: "";
+	transition: width 1.5s 3.1s ease-out; /*задаём время анимации*/
+    z-index: -1;
+    pointer-events: none;
+}
+
+
+
+.EThemeWrap {
+    position: absolute;
+    top: 0;
+    height: 20vh;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    margin-left: 15%;
+    z-index: 3;
+    width: 10vw;
+}
+
+.ETheme {
+    font-size: 2vw;
+    background-color: rgb(0, 0, 0);
+    padding: 10%;
+    color: rgb(255, 255, 255);
+    border: white solid 2px;
+    font-family: TT Livret;
+    cursor: pointer;
+    letter-spacing: 2px;
+    font-weight: 0;
+    word-spacing: 4px;
+    text-decoration: none;
+    transition: 1s 4.6s all;
+
+}
+
+.ETheme::before {
+    display: inline;
+	position: absolute;
+    right: -223%; /*изменить на right:0;, чтобы изменить направление подчёркивания */
+    bottom: 3%;
+	width: 225%;/*задаём длинну линии до наведения курсора*/
+	height: 0.3vh; /*задаём ширину линии*/
+	background-color: white; /*задаём цвет линии*/
+	content: "";
+	transition: width 1.5s 3.1s ease-out; /*задаём время анимации*/
+    z-index: -1;
+    pointer-events: none;
+}
+
+
+.NPThemeWrap {
+    position: absolute;
+    top: 0;
+    height: 80vh;
+    width: 10vw;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    margin-left: 15%;
+    z-index: 1;
+}
+
+
+.NPTheme {
+    font-size: 2vw;
+    background-color: rgb(0, 0, 0);
+    padding: 10%;
+    color: rgb(255, 255, 255);
+    border: white solid 2px;
+    font-family: TT Livret;
+    cursor: pointer;
+    letter-spacing: 2px;
+    font-weight: 0;
+    word-spacing: 4px;
+    text-decoration: none;
+    transition: 1s 4.6s all;
+}
+
+.NPTheme::after {
+    display: inline;
+	position: absolute;
+    right: -223%; /*изменить на right:0;, чтобы изменить направление подчёркивания */
+    bottom: 1%;
+	width: 225%;/*задаём длинну линии до наведения курсора*/
+	height: 0.3vh; /*задаём ширину линии*/
+	background-color: white; /*задаём цвет линии*/
+	content: "";
+	transition: width 1.5s 3.1s ease-out; /*задаём время анимации*/
+    z-index: -1;
+    pointer-events: none;
+}
+
+.MKTThemeWrap {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 20vh;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    margin-right: 17%;
+    z-index: 3;
+    width: 10vw;
+}
+
+.MKTTheme {
+    font-size: 2vw;
+    background-color: rgb(0, 0, 0);
+    padding: 10%;
+    color: rgb(255, 255, 255);
+    border: white solid 2px;
+    font-family: TT Livret;
+    cursor: pointer;
+    letter-spacing: 2px;
+    font-weight: 0;
+    word-spacing: 4px;
+    text-decoration: none;
+    transition: 1s 4.6s all;
+}
+
+.MKTTheme::after {
+    display: inline;
+	position: absolute;
+    left: -157%; /*изменить на right:0;, чтобы изменить направление подчёркивания */
+    bottom: 3%;
+	width: 170%;/*задаём длинну линии до наведения курсора*/
+	height: 0.3vh; /*задаём ширину линии*/
+	background-color: white; /*задаём цвет линии*/
+	content: "";
+	transition: width 1.5s 3.1s ease-out; /*задаём время анимации*/
+    z-index: -1;
+    pointer-events: none;
+}
+
+
+
+.OThemeWrap {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 50vh;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    margin-right: 17%;
+    z-index: 2;
+    width: 10vw;
+}
+
+.OTheme {
+    font-size: 2vw;
+    background-color: rgb(0, 0, 0);
+    padding: 10%;
+    color: rgb(255, 255, 255);
+    border: white solid 2px;
+    font-family: TT Livret;
+    cursor: pointer;
+    letter-spacing: 2px;
+    font-weight: 0;
+    word-spacing: 4px;
+    text-decoration: none;
+    transition: 1s 4.6s all;
+}
+
+.OTheme::after {
+    display: inline;
+	position: absolute;
+    left: -184.5%; /*изменить на right:0;, чтобы изменить направление подчёркивания */
+    bottom: 1.5%;
+	width: 200%;/*задаём длинну линии до наведения курсора*/
+	height: 0.4vh; /*задаём ширину линии*/
+	background-color: white; /*задаём цвет линии*/
+	content: "";
+	transition: width 1.5s 3.1s ease-out; /*задаём время анимации*/
+    z-index: -1;
+    pointer-events: none;
+}
+
+.TORThemeWrap {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 80vh;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    margin-right: 17%;
+    z-index: 1;
+    width: 10vw;
+}
+
+.TORTheme::after {
+    display: inline;
+	position: absolute;
+    left: -157%; /*изменить на right:0;, чтобы изменить направление подчёркивания */
+    bottom: 1%;
+	width: 170%;/*задаём длинну линии до наведения курсора*/
+	height: 0.3vh; /*задаём ширину линии*/
+	background-color: rgb(255, 255, 255); /*задаём цвет линии*/
+	content: "";
+	transition: width 1.5s 3.1s ease-out; /*задаём время анимации*/
+    z-index: -1;
+    pointer-events: none;
+}
+
+.TORTheme {
+    font-size: 2vw;
+    background-color: rgb(0, 0, 0);
+    padding: 10%;
+    color: rgb(255, 255, 255);
+    border: white solid 2px;
+    font-family: TT Livret;
+    cursor: pointer;
+    letter-spacing: 2px;
+    font-weight: 0;
+    word-spacing: 4px;
+    text-decoration: none;
+    transition: 1s 4.6s all;
+}
+
+
+
+.NOCenterSlog {
+    position: absolute;
+    top: 0;
+    height: 50vh;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    margin-left: 40%;
+    z-index: 2;
+    font-size: 5vw;
+    transition: 0.5s all;
+    color: #ffffff;
+}
+
+.NOCenterSlog::before {
+    display: block;
+	position: absolute;
+    margin-left: 10vw;
+    top: 0;
+	/*изменить на right:0;, чтобы изменить направление подчёркивания */
+    width: 0;/*задаём длинну линии до наведения курсора*/
+	height: 3px; /*задаём ширину линии*/
+    transform: rotate(0.25turn);
+	background-color: #ffffff; /*задаём цвет линии*/
+	content: "";
+	transition: width 1.5s ease-out; /*задаём время анимации*/
+}
+
+.NOCenterSlog::after {
+    display: block;
+	position: absolute;
+    margin-right: 10vw;
+    top: 98%;
+	/*изменить на right:0;, чтобы изменить направление подчёркивания */
+    width: 0;/*задаём длинну линии до наведения курсора*/
+	height: 3px; /*задаём ширину линии*/
+    transform: rotate(0.25turn);
+	background-color: #ffffff; /*задаём цвет линии*/
+	content: "";
+	transition: width 1.5s ease-out; /*задаём время анимации*/
+}
+
+
+.NOCMThemeWrap {
+    position: absolute;
+    top: 0;
+    height: 50vh;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    margin-left: 15%;
+    z-index: 2;
+    width: 10vw;
+}
+
+.NOCMTheme {
+    font-size: 2vw;
+    background-color: rgb(27, 27, 27);
+    padding: 10%;
+    color: rgb(27, 27, 27);
+    border: rgb(27, 27, 27) solid 2px;
+    font-family: TT Livret;
+    cursor: pointer;
+    letter-spacing: 2px;
+    font-weight: 0;
+    word-spacing: 4px;
+    text-decoration: none;
+}
+
+.NOCMTheme::before {
+    display: inline;
+	position: absolute;
+    right: -250%; /*изменить на right:0;, чтобы изменить направление подчёркивания */
+    bottom: 1.2%;
+    width: 0;/*задаём длинну линии до наведения курсора*/
+	height: 0.3vh; /*задаём ширину линии*/
+	background-color: white; /*задаём цвет линии*/
+	content: "";
+	transition: width 1.5s ease-out; /*задаём время анимации*/
+}
+
+
+
+.NOEThemeWrap {
+    position: absolute;
+    top: 0;
+    height: 20vh;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    margin-left: 15%;
+    z-index: 3;
+    width: 10vw;
+}
+
+.NOETheme {
+    font-size: 2vw;
+    background-color: rgb(27, 27, 27);
+    padding: 10%;
+    color: rgb(27, 27, 27);
+    border: rgb(27, 27, 27) solid 2px;
+    font-family: TT Livret;
+    cursor: pointer;
+    letter-spacing: 2px;
+    font-weight: 0;
+    word-spacing: 4px;
+    text-decoration: none;
+}
+
+.NOETheme::before {
+    display: inline;
+	position: absolute;
+    right: -223%; /*изменить на right:0;, чтобы изменить направление подчёркивания */
+    bottom: 3%;
+	width: 0;/*задаём длинну линии до наведения курсора*/
+	height: 0.3vh; /*задаём ширину линии*/
+	background-color: white; /*задаём цвет линии*/
+	content: "";
+	transition: width 1.5s ease-out; /*задаём время анимации*/
+}
+
+
+.NONPThemeWrap {
+    position: absolute;
+    top: 0;
+    height: 80vh;
+    width: 10vw;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    margin-left: 15%;
+    z-index: 1;
+}
+
+
+.NONPTheme {
+    font-size: 2vw;
+    background-color: rgb(27, 27, 27);
+    padding: 10%;
+    color: rgb(27, 27, 27);
+    border: rgb(27, 27, 27) solid 2px;
+    font-family: TT Livret;
+    cursor: pointer;
+    letter-spacing: 2px;
+    font-weight: 0;
+    word-spacing: 4px;
+    text-decoration: none;
+}
+
+.NONPTheme::after {
+    display: inline;
+	position: absolute;
+    right: -223%; /*изменить на right:0;, чтобы изменить направление подчёркивания */
+    bottom: 1%;
+	width: 0;/*задаём длинну линии до наведения курсора*/
+	height: 0.3vh; /*задаём ширину линии*/
+	background-color: white; /*задаём цвет линии*/
+	content: "";
+	transition: width 1.5s ease-out; /*задаём время анимации*/
+}
+
+.NOMKTThemeWrap {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 20vh;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    margin-right: 17%;
+    z-index: 3;
+    width: 10vw;
+}
+
+.NOMKTTheme {
+    font-size: 2vw;
+    background-color: rgb(27, 27, 27);
+    padding: 10%;
+    color: rgb(27, 27, 27);
+    border: rgb(27, 27, 27) solid 2px;
+    font-family: TT Livret;
+    cursor: pointer;
+    letter-spacing: 2px;
+    font-weight: 0;
+    word-spacing: 4px;
+    text-decoration: none;
+}
+
+.NOMKTTheme::after {
+    display: inline;
+	position: absolute;
+    left: -157%; /*изменить на right:0;, чтобы изменить направление подчёркивания */
+    bottom: 3%;
+	width: 0;/*задаём длинну линии до наведения курсора*/
+	height: 0.3vh; /*задаём ширину линии*/
+	background-color: white; /*задаём цвет линии*/
+	content: "";
+	transition: width 1.5s ease-out; /*задаём время анимации*/
+}
+
+
+
+.NOOThemeWrap {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 50vh;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    margin-right: 17%;
+    z-index: 2;
+    width: 10vw;
+}
+
+.NOOTheme {
+    font-size: 2vw;
+    background-color: rgb(27, 27, 27);
+    padding: 10%;
+    color: rgb(27, 27, 27);
+    border: rgb(27, 27, 27) solid 2px;
+    font-family: TT Livret;
+    cursor: pointer;
+    letter-spacing: 2px;
+    font-weight: 0;
+    word-spacing: 4px;
+    text-decoration: none;
+}
+
+.NOOTheme::after {
+    display: inline;
+	position: absolute;
+    left: -184.5%; /*изменить на right:0;, чтобы изменить направление подчёркивания */
+    bottom: 1.5%;
+	width: 0;/*задаём длинну линии до наведения курсора*/
+	height: 0.4vh; /*задаём ширину линии*/
+	background-color: white; /*задаём цвет линии*/
+	content: "";
+	transition: width 1.5s ease-out; /*задаём время анимации*/
+}
+
+.NOTORThemeWrap {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 80vh;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    margin-right: 17%;
+    z-index: 1;
+    width: 10vw;
+}
+
+.NOTORTheme::after {
+    display: inline;
+	position: absolute;
+    left: -157%; /*изменить на right:0;, чтобы изменить направление подчёркивания */
+    bottom: 1%;
+	width: 0;/*задаём длинну линии до наведения курсора*/
+	height: 0.3vh; /*задаём ширину линии*/
+	background-color: rgb(255, 255, 255); /*задаём цвет линии*/
+	content: "";
+	transition: width 1.5s ease-out; /*задаём время анимации*/
+}
+
+.NOTORTheme {
+    font-size: 2vw;
+    background-color: rgb(27, 27, 27);
+    padding: 10%;
+    color: rgb(27, 27, 27);
+    border: rgb(27, 27, 27) solid 2px;
+    font-family: TT Livret;
+    cursor: pointer;
+    letter-spacing: 2px;
+    font-weight: 0;
+    word-spacing: 4px;
+    text-decoration: none;
+}
+
+.CheckPage {
+    position: absolute;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    width: 20%;
+    margin-left: 40%;
+    border: 5px black solid;
+    text-align: center;
+    background-color: rgb(75, 75, 75);
+    padding: 0.7% 1% 0.7% 1%;
+    margin-top: 35%;
+    font-family: montserrat,Arial,sans-serif;
+    font-size: 120%;
+    font-weight: bold;
+    box-shadow: 2px 10px rgb(17, 17, 17);
+    transition: 0.5s all;
+    cursor: pointer;
+    z-index: 10000;
+}
+
+.CheckPage:hover {
+    box-shadow: 2px 6px rgb(17, 17, 17);
+    transform: scale(1.05);
+    color: #ffffff;
+}

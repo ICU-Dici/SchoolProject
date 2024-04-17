@@ -1,0 +1,21 @@
+import './App.css';
+import {BrowserRouter, NavLink, Route, Routes} from "react-router-dom";
+import Header from './components/PhysicsEGE/Header/Header';
+import MainPage from './components/MainBody/MainPage';
+import NavigationSide from './components/NavigationSide/NavigationSide';
+import PhysicsEGE from './components/PhysicsEGE/PhysicsEGE';
+
+const  App = () => {
+  return (
+    <BrowserRouter>
+    <div className="AppWrapper">
+      <Routes>
+      <Route path='/NavigationBlock/' element={<NavigationSide/>}/>
+      <Route path='/Physics/*' element={<PhysicsEGE/>}/>
+      </Routes>
+    </div>
+    </BrowserRouter>
+  );
+}
+
+export default App;

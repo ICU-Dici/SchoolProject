@@ -1,0 +1,40 @@
+.headerWrapper {
+    grid-area: H;
+    background-color: #4f5361;
+    display: grid;
+    padding: 1.5%;
+    color: rgb(187, 187, 187);
+}
+
+.MainBody {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr 2fr;
+}
+
+.MainBody span {
+    transition: all 0.1s linear;
+    cursor: pointer;
+    height: fit-content;
+    color: rgb(187, 187, 187);
+    text-decoration: none;
+}
+
+.NavLink {
+    text-decoration: none;
+    transition: all 0.1s linear;
+}
+
+.NavLink:hover {
+    color: rgb(230, 230, 230);
+    margin-bottom: -10%;
+}
+
+.MainBody span:hover {
+    color: rgb(230, 230, 230);
+    font-size: 110%;
+    margin-bottom: -10%;
+}

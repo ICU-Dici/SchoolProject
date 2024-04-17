@@ -1,0 +1,9 @@
+.AppWrapper {
+    grid-template-areas: 
+    'H'
+    'M';
+    grid-template-rows: 10fr 1fr;
+}
+.MainBody {
+    grid-area: M;
+}
