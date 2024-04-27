@@ -10,9 +10,7 @@ const  App = () => {
   return (
     <BrowserRouter>
     <div className="AppWrapper">
-      <Routes>
       <PhysicsEGEContainer/>
-      </Routes>
     </div>
     </BrowserRouter>
   );
