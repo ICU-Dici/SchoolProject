@@ -11,8 +11,7 @@ const  App = () => {
     <BrowserRouter>
     <div className="AppWrapper">
       <Routes>
-      <Route path='/NavigationBlock/' element={<NavigationSideContainer/>}/>
-      <Route path='/Physics/*' element={<PhysicsEGEContainer/>}/>
+      <PhysicsEGEContainer/>
       </Routes>
     </div>
     </BrowserRouter>
