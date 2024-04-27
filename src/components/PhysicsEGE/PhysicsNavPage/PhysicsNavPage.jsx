@@ -17,7 +17,7 @@ const PhysicsNavPage = (props) => {
     return (
         <div className={s.burgerMenuWrap}>   <div className={props.CurrentBackgroudImg === '' ? s.NoBackgroudDivImg : s.BackgroudDivImg}><img className={props.CurrentBackgroudImg === '' ? s.NoBackgroudImg : s.BackgroudImg} src={props.CurrentBackgroudImg} /></div>
             <div className={s.HeaderBurgerMenu}>
-                <NavLink to='/Physics/about' className={s.logoBurgMenuLink} onClick={() => {CloseOnClick('black')}}><div className={s.logoBurgMenu}>logo</div></NavLink>
+                <NavLink to='/about' className={s.logoBurgMenuLink} onClick={() => {CloseOnClick('black')}}><div className={s.logoBurgMenu}>logo</div></NavLink>
                 <div></div>
                 <div className={s.closeBurgMenu} onClick={CloseOnClick}><span className={s.closeBurgMenuText}>close</span> <span className={s.closeBurgMenuSymbol}>&#10006;</span></div>
             </div>
